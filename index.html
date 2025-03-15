@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English জানালা</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- css link -->
+   <link rel="stylesheet" href="./index.css">
+   
+
+
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="navbar" class=" w-11/12 mx-auto  bg--300 py-3 flex  justify-between items-center gap-5 ">
+    <nav class="flex items-center gap-5">
+      <div>
+        <h1 class="text-xl font-bold">English</h1>
+      </div>
+      <div class="flex gap-3">
+        <div><img class="w-10" src="./B11-A6-English-Janala-main/B11-A6-English-Janala-main/assets/logo.png" alt=""></div>
+        <div class="py-1 font-semibold"><h1>জানালা</h1></div>
+      </div>
+    </nav>
+    <div class=" flex gap-1 ">
+        <button onclick="" class="btn bg-blue-500 text-white px-2">
+            <i class="fa-solid fa-right-from-bracket"></i></i> FAQ
+          </button>
+          <button onclick="" class="btn bg-blue-500 text-white px-2">
+            <i class="fas fa-book-open"></i> Learn
+          </button>
+          <button onclick="" class="btn bg-blue-500 text-white px-2">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+    </div>
+  </header>
+  <hr>
+
+  <!-- Login Section -->
+  <section id="login-page" class=" w-11/12 mx-auto flex justify-between items-center ">
+    <!-- Left Side (Title & Login Form) -->
+    <div class="w-1/2">
+      <!-- title section -->
+      <div id="hero-title" class="py-10">
+        <h1 class="text-2xl font-extrabold">
+          <span class="text-blue-500">English</span> is Easy!!
+        </h1>
+        <p>আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br>আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ</p>
+      </div>
+  
+      <!-- login form -->
+      <div class="bg-gray-100 p-10 rounded-lg shadow-lg w-3/4">
+        <h2 class="text-2xl font-bold mb-5 text-center">Login Form</h2>
+        <input id="username" type="text" placeholder="Enter Username" class="input input-bordered w-full mb-4 p-2 rounded">
+        <input id="password" type="password" placeholder="Enter Password" class="input input-bordered w-full mb-6 p-2 rounded">
+        <button onclick="handleLogin()" class="btn bg-blue-500 text-white w-full py-2 rounded">Login</button>
+      </div>
+    </div>
+  
+    <!--image-->
+    <div class="w-1/2 flex justify-center">
+      <img class="w-3/4" src="./B11-A6-English-Janala-main/B11-A6-English-Janala-main/assets/hero-student.png" alt="Learning Image">
+    </div>
+  </section>
+  
+
+  <!-- Dashboard Section (Hidden) -->
+  <section id="dashboard" class=" h-52 text-center justify-center items-center py-16">
+    <h1 class="text-4xl font-bold">Let's Learn Vocabularies</h1>
+
+    <div id="lesson-container" class="flex items-center">
+      <button class="btn btn-outline btn-primary">Primary</button>
+    </div>
+
+    <div id="word-details-container">
+      
+    </div>
+  </section>
+  <hr>
+
+
+  <footer class="w-11/12 mx-auto flex justify-between py-3">  
+    <section class="items-center " >
+        <!-- footer title -->
+          <div class="flex py-2">
+            <div >
+                <h1 class="text-xl font-bold ">English</h1>
+                </div>
+              
+              <div class="flex gap-3">
+                <div><img class="w-10" src="./B11-A6-English-Janala-main/B11-A6-English-Janala-main/assets/logo.png" alt=""></div>
+                <div class="py-1 font-semibold"><h1>জানালা</h1></div>
+              </div>
+    
+          </div>
+          <div class="">
+            <p>ইংরেজি শিখুন সহজে</p>
+            <p class="py-2">Providing ED-Tech Applications since 2025</p>
+          </div>
+    </section>
+
+    <section>
+        <!-- footer icon -->
+        <div>
+            <!-- follow -->
+            <div>Follow Us On </div>
+            <!-- icon -->
+             <div class="flex gap-2 items-center">
+              <!-- pic-1 -->
+               <div><img src="./B11-A6-English-Janala-main/B11-A6-English-Janala-main/assets/fb-thumb.png" alt=""></div>
+               <!-- pic-2 -->
+               <div><img src="./B11-A6-English-Janala-main/B11-A6-English-Janala-main/assets/github-thumb.png" alt=""></div>
+               <!-- pic-3 -->
+               <div><img src="./B11-A6-English-Janala-main/B11-A6-English-Janala-main/assets/instagram-thumb.png" alt=""></div>
+               <!-- pic-4 -->
+               <div><img src="./B11-A6-English-Janala-main/B11-A6-English-Janala-main/assets/youtube-thumb.png" alt=""></div>
+             </div>
+         </div>
+    </section>
+  </footer>
+  
+<script src="./script/assingment.js"></script>
+</body>
+</html>
+
+
+
