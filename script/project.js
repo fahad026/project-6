@@ -32,24 +32,20 @@ const handleLogin = () => {
   // }
   
   function displayLesson(data){
-    // get the container
     const lessonContainer = document.getElementById("lesson-container");
   
-    // loop operation 
+    // Tailwind CSS দিয়ে container কে flex করে, center এ নিই 
+    lessonContainer.className = "flex justify-center  items-center gap-4 mt-5";
+  
     for(let lesson of data){
-      console.log(lesson); // lesson variables will print 
-  
-      // create element
-    const lessonDiv=document.createElement("div")
-    lessonDiv.innerHTML=`
-    <button class="btn btn-outline btn-primary"> Lesson-${lesson.level_no} </button>
-    `
-  
-    // append
-    lessonContainer.append(lessonDiv)
+      const lessonDiv = document.createElement("div");
+      lessonDiv.innerHTML = `
+        <button class="btn btn-outline btn-primary w-60"> 
+          Lesson-${lesson.level_no}
+        </button>
+      `;
+      lessonContainer.appendChild(lessonDiv);
     }
-  
-    
   }
   
   loadLessons();
